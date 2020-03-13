@@ -17,7 +17,8 @@ testButton.onclick = function () {
         chrome.storage.sync.set(data, function () {
             if (data.status) {
                 testButton.classList.add("active");
-                testButton.textContent = "Dobrobyt ON"
+                testButton.textContent = "Dobrobyt ON";
+                chrome.tabs.executeScript({file: 'filter.js'});
             } else {
                 testButton.classList.remove("active");
                 testButton.textContent = "Dobrobyt OFF"
