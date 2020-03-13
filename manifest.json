@@ -1,7 +1,7 @@
  {
-    "name": "Word Replacer",
+    "name": "Dobrobyt",
     "version": "1.0",
-    "description": "Build an Extension!",
+    "description": "Podmienia koronowariusy na dobrobyt, przez co nie musisz się niczego bać!",
     "permissions": ["storage", "declarativeContent", "activeTab"],
     "background": {
         "scripts": ["background.js"],

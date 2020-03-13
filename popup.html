@@ -1,80 +1,38 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <style>
 
-    body {
-        width: 200px;
-        box-sizing: border-box;
-    }
 
-    button, input {
-        width: 100%;
-        box-sizing: border-box;
-    }
+        body {
+            width: 200px;
+            box-sizing: border-box;
+        }
 
-    button {
-        outline: none;
-    }
+        .active {
+          color: green;
+        }
 
-    .row {
-        width: 100%;
-        display: flex;
-        margin-top: 3px;
-        margin-bottom: 3px;
-    }
+        .test {
+            background-color: gray;
+        }
 
-    .row > div {
-        flex: 1;
-    }
+        button, input {
+            width: 100%;
+            box-sizing: border-box;
+        }
 
-    .row > .separator {
-        flex: 0 1 20px;
-        text-align: center;
-    }
-    .row > .add {
-        flex: 0 1 12px;
-        text-align: right;
-        font-weight: bolder;
-        margin-left: 3px;
-    }
-
-    .add button {
-        line-height: 15px;
-    }
-
-    .remove {
-        width: auto;
-        display: block;
-        float: right;
-        height: auto;
-        font-size: 10px;
-    }
+        button {
+            outline: none;
+        }
 
     </style>
-  </head>
-  <body>
-    <div id="dict">
-
-    </div>
-    <div class="row">
-        <div>
-            <input id="key" title="key" type="text">
-        </div>
-        <div class="separator">
-        -->
-        </div>
-        <div>
-            <input id="value" title="value" type="text">
-        </div>
-        <div class="add">
-            <button id="add-button">+</button>
-        </div>
-    </div>
-    <div class="row">
-        <button id="test" name="Test">Apply</button>
-    </div>
-    <!-- <button id="changeColor"></button> -->
-    <script src="popup.js"></script>
-  </body>
+</head>
+<body>
+<h1 id="status"></h1>
+<div class="row">
+    <button id="test" name="Test"></button>
+</div>
+<script src="popup.js"></script>
+</body>
 </html>
